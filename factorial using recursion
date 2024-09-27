@@ -1,0 +1,10 @@
+def rfact(n):
+	if n==0:
+		return 1
+	else:
+		return n*rfact(n-1)
+num=int(input("enter a number:"))
+if num<0:
+	print("factorial does not exist")
+else:
+	print("factorial of",num,"is",rfact(num))
